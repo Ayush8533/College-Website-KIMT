@@ -1456,3 +1456,183 @@ a:focus, button:focus{
   margin-left: auto;
   margin-right: auto;
 }
+/* ===== FINAL MOBILE FIX (VISION SECTION) ===== */
+@media (max-width: 768px) {
+
+  .vision-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .vision-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .vision-image img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .vision-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .vision-card {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+}
+.vision-card h3 {
+  text-align: center;
+}
+
+.vision-card p {
+  text-align: center;
+}
+/* ================= FINAL RESPONSIVE FIX ================= */
+
+/* Container fix */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Navbar fix */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow wrap */
+}
+
+/* Logo fix */
+.logo {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal; /* 🔥 important */
+}
+
+/* Logo text fix */
+.logo-text {
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+/* Prevent button breaking */
+.navbar .cta-btn {
+  flex-shrink: 0;
+}
+
+/* Menu spacing fix */
+.navbar ul {
+  flex: 1;
+  justify-content: center;
+}
+
+/* HERO FIX (VERY IMPORTANT) */
+.hero {
+  background-attachment: scroll !important;
+  width: 100%;
+}
+
+/* Fix image overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 0 14px;
+  }
+
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .logo-text {
+    font-size: 12px;
+  }
+
+  /* Fix menu position */
+  .navbar ul {
+    top: 60px;
+  }
+
+  /* Hero text fix */
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Button full width */
+  .navbar .cta-btn {
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+  .logo-text {
+    font-size: 11px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+}
+/* ===== WHATSAPP BUTTON ===== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 90px; /* back-to-top ke upar */
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: #25D366;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  background: #1ebe5d;
+}
+
+/* Mobile adjust */
+@media(max-width:768px){
+  .whatsapp-btn {
+    bottom: 80px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
