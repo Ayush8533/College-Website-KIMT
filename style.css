@@ -209,7 +209,7 @@ header{
   background-size: cover;
   background-position: top;   /* 🔥 important */
   background-attachment: fixed;
-  min-height: 90vh;
+  min-height: 110vh;
   display: flex;
   align-items: center;
   color: #fff;
