@@ -1226,7 +1226,7 @@ a:focus, button:focus{
 {
   display: inline-block;
   padding: 10px 0;
-  animation: tickerMove 15s linear infinite;
+  animation: tickerMove 45s linear infinite;
 }
 
 @keyframes tickerMove {
