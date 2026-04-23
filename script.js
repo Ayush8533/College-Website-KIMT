@@ -66,25 +66,58 @@ document.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ================= SIMPLE GALLERY SLIDER =================
-let current = 0;
-const slides = document.querySelectorAll('.gallery-slide');
+// ================= GALLERY LIGHTBOX =================
+const images = document.querySelectorAll(".gallery-thumb img");
 
-function showSlide(index) {
-  if (!slides.length) return;
-  slides.forEach(slide => slide.style.display = 'none');
-  slides[index].style.display = 'block';
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  document.getElementById("lightboxOverlay").style.display = "flex";
+  showImage();
 }
 
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  showSlide(current);
+function showImage() {
+  const img = images[currentIndex];
+  document.getElementById("lbMainImg").src = img.src;
+  document.getElementById("lbMainCaption").innerText = img.alt;
+  document.getElementById("lbMainCounter").innerText = `${currentIndex + 1} / ${images.length}`;
 }
 
-if (slides.length) {
-  showSlide(current);
-  setInterval(nextSlide, 4000);
+function changeLightbox(step) {
+  currentIndex += step;
+
+  if (currentIndex < 0) currentIndex = images.length - 1;
+  if (currentIndex >= images.length) currentIndex = 0;
+
+  showImage();
 }
+
+function closeLightbox() {
+  document.getElementById("lightboxOverlay").style.display = "none";
+}
+
+function closeLightboxOutside(e) {
+  if (e.target.id === "lightboxOverlay") {
+    closeLightbox();
+  }
+}
+
+function updateLightbox() {
+  const item = galleryImages[lbCurrentIndex];
+  document.getElementById('lbMainImg').src = item.src;
+  document.getElementById('lbMainImg').alt = item.caption;
+  document.getElementById('lbMainCaption').textContent = item.caption;
+  document.getElementById('lbMainCounter').textContent = (lbCurrentIndex + 1) + ' / ' + galleryImages.length;
+}
+
+document.addEventListener('keydown', function(e) {
+  const overlay = document.getElementById('lightboxOverlay');
+  if (!overlay || !overlay.classList.contains('active')) return;
+  if (e.key === 'ArrowRight') changeLightbox(1);
+  if (e.key === 'ArrowLeft')  changeLightbox(-1);
+  if (e.key === 'Escape')     closeLightbox();
+});
 
 // ================= BACK TO TOP =================
 const backToTopBtn = document.getElementById('backToTop');
