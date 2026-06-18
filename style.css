@@ -276,7 +276,7 @@ header{
 
 .hero{
     background-image:url("images/collegebuildingportrait.png") !important;
-    background-position:center !important;
+    background-position:center bottom !important;
     background-size:cover !important;
     background-repeat:no-repeat !important;
 }
