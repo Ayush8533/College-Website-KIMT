@@ -411,3 +411,6 @@ if (inquiryForm) {
 }
 
 console.log("✅ Script Loaded Successfully");
+document.getElementById('chatbotToggle').onclick = function() {
+    document.getElementById('chatbotPanel').classList.toggle('open');
+};

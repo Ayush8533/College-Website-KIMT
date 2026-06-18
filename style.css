@@ -1880,3 +1880,7 @@ footer,
 #chatbotPanel {
     z-index: 999999 !important;
 }
+
+document.getElementById('chatbotToggle').onclick = function() {
+    document.getElementById('chatbotPanel').classList.toggle('open');
+}
