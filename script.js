@@ -409,6 +409,9 @@ if (inquiryForm) {
     inquiryForm.reset();
   });
 }
+document.getElementById('chatbotToggle').addEventListener('click', function () {
+    document.getElementById('chatbotPanel').classList.toggle('open');
+});
 
 console.log("✅ Script Loaded Successfully");
 document.getElementById('chatbotToggle').onclick = function() {
