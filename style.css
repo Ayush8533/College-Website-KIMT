@@ -1468,9 +1468,12 @@ footer a:hover{
   font-size:13px !important;
   margin-top:4px !important;
 }
+
+.lb-content p,
 .lb-counter {
     display: none !important;
 }
+
 .lb-close-btn{
   position:fixed;
   top:18px;
