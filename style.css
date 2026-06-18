@@ -1871,3 +1871,12 @@ footer,
     max-width: 100%;
 }
 
+#chatbotToggle {
+    position: fixed !important;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+}
+
+#chatbotPanel {
+    z-index: 999999 !important;
+}
