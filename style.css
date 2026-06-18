@@ -1823,6 +1823,10 @@ img {
   margin-top: 4px !important;
 }
 
+.lb-counter {
+    display: none !important;
+}
+
 .lb-close-btn {
   position: fixed;
   top: 18px;
