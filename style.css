@@ -1881,6 +1881,14 @@ footer,
     z-index: 999999 !important;
 }
 
-document.getElementById('chatbotToggle').onclick = function() {
-    document.getElementById('chatbotPanel').classList.toggle('open');
+.chatbot-toggle {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+}
+
+.chatbot-panel {
+    z-index: 999999 !important;
 }
