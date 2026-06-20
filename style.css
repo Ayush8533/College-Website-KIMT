@@ -1892,3 +1892,25 @@ footer,
 .chatbot-panel {
     z-index: 999999 !important;
 }
+.portal-btn {
+    padding: 10px 18px !important;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.student-btn {
+    background: #003b8e;
+    color: white !important;
+}
+
+.admin-btn {
+    background: #ffc107;
+    color: #111 !important;
+}
+
+.portal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
