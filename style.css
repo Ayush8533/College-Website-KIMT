@@ -2008,3 +2008,819 @@ footer,
     width: 100% !important;
   }
 }
+
+/* ===== NAVBAR FINAL FIX ===== */
+
+.navbar {
+  width: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+.nav-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.logo img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #003b88;
+  line-height: 1.2;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-btn {
+  padding: 13px 22px !important;
+  border-radius: 15px;
+  color: #fff !important;
+  font-weight: 800 !important;
+  text-align: center;
+  min-width: 95px;
+}
+
+.admin-btn {
+  background: linear-gradient(135deg, #ffb300, #ff7a00);
+}
+
+.student-btn {
+  background: linear-gradient(135deg, #003caa, #0074ff);
+}
+
+.fees-btn {
+  background: linear-gradient(135deg, #00a83b, #00d25b);
+}
+
+.apply-btn {
+  background: #ffb703;
+  color: #000 !important;
+  border-radius: 40px;
+  padding: 14px 28px !important;
+  box-shadow: 0 8px 25px rgba(255, 183, 3, 0.35);
+}
+
+/* Dropdown desktop */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #fff;
+  min-width: 230px;
+  padding: 10px 0;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  display: none;
+  z-index: 99999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 12px 18px;
+}
+
+/* Mobile button hidden on desktop */
+.mobile-menu-toggle {
+  display: none;
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-container {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    min-width: auto;
+  }
+
+  .logo img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .logo span {
+    font-size: 15px;
+    max-width: 220px;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border: 2px solid #ffb703;
+    background: #fff;
+    color: #003b88;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 0;
+    z-index: 100001;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 82%;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 95px 22px 30px;
+    box-shadow: -10px 0 35px rgba(0,0,0,0.18);
+    transition: right 0.35s ease;
+    overflow-y: auto;
+    z-index: 100000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-menu li a {
+    display: block;
+    width: 100%;
+    padding: 18px 8px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .nav-btn {
+    width: 100%;
+    margin: 12px 0;
+    padding: 20px !important;
+    font-size: 24px !important;
+    border-radius: 20px;
+  }
+
+  .apply-btn {
+    margin-top: 12px;
+    font-size: 20px !important;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    min-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    background: #fff;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    font-size: 19px;
+    padding: 18px 8px;
+  }
+}
+
+/* Desktop thoda compact */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav-container {
+    padding: 12px 18px;
+    gap: 12px;
+  }
+
+  .nav-menu {
+    gap: 11px;
+  }
+
+  .nav-menu li a {
+    font-size: 13px;
+  }
+
+  .nav-btn {
+    padding: 11px 16px !important;
+    min-width: 85px;
+  }
+
+  .apply-btn {
+    padding: 12px 22px !important;
+  }
+
+  .logo span {
+    font-size: 14px;
+  }
+}
+
+/* ================= NAVBAR FINAL ================= */
+
+.navbar{
+    width:100%;
+    height:auto;
+    background:#fff;
+    padding:18px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    position:sticky;
+    top:0;
+    z-index:9999;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width:260px;
+}
+
+
+.logo-img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+
+.logo-text{
+    font-size:16px;
+    font-weight:800;
+    color:#003b88;
+    line-height:1.2;
+}
+
+
+
+/* MENU */
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+
+.nav-menu li{
+    list-style:none;
+}
+
+
+.nav-menu a{
+    text-decoration:none;
+    color:#111827;
+    font-weight:700;
+    font-size:15px;
+    white-space:nowrap;
+}
+
+
+
+/* DROPDOWN */
+
+.dropdown{
+    position:relative;
+}
+
+
+.dropdown-menu{
+    position:absolute;
+    top:130%;
+    left:0;
+    width:250px;
+    background:white;
+    border-radius:15px;
+    padding:10px 0;
+    display:none;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+
+.dropdown-menu a{
+    display:block;
+    padding:14px 20px;
+}
+
+
+
+
+/* BUTTONS */
+
+.admin-btn,
+.student-btn,
+.fees-btn{
+    color:white!important;
+    padding:14px 22px!important;
+    border-radius:15px;
+}
+
+
+.admin-btn{
+background:linear-gradient(135deg,#ffbf00,#ff8800);
+}
+
+
+.student-btn{
+background:linear-gradient(135deg,#003ca8,#0075ff);
+}
+
+
+.fees-btn{
+background:linear-gradient(135deg,#00a63d,#00d95b);
+}
+
+
+.apply-btn{
+background:#ffc107;
+color:#000!important;
+padding:15px 30px!important;
+border-radius:40px;
+}
+
+
+
+/* HAMBURGER */
+
+.mobile-menu-toggle{
+    display:none;
+    background:white;
+    border:none;
+}
+
+
+.hamburger{
+    display:block;
+    width:30px;
+    height:3px;
+    background:#003b88;
+    margin:6px;
+}
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+padding:15px 20px;
+
+}
+
+
+.logo{
+min-width:auto;
+}
+
+
+.logo-img{
+width:55px;
+height:55px;
+}
+
+
+.logo-text{
+
+font-size:15px;
+max-width:220px;
+
+}
+
+
+
+.mobile-menu-toggle{
+
+display:block;
+margin-left:auto;
+z-index:100001;
+
+}
+
+
+
+/* side menu */
+
+
+.nav-menu{
+
+position:fixed;
+
+top:0;
+
+right:-100%;
+
+width:85%;
+
+height:100vh;
+
+background:white;
+
+flex-direction:column;
+
+align-items:center;
+
+padding-top:100px;
+
+gap:0;
+
+transition:.4s;
+
+box-shadow:-10px 0 30px rgba(0,0,0,.2);
+
+overflow-y:auto;
+
+}
+
+
+
+.nav-menu.active{
+
+right:0;
+
+}
+
+
+
+.nav-menu li{
+
+width:100%;
+
+text-align:center;
+
+border-bottom:1px solid #eee;
+
+}
+
+
+
+.nav-menu a{
+
+display:block;
+
+font-size:20px;
+
+padding:20px;
+
+}
+
+
+
+/* mobile dropdown */
+
+
+.dropdown-menu{
+
+position:static;
+
+width:100%;
+
+box-shadow:none;
+
+border-radius:0;
+
+display:none;
+
+}
+
+
+
+.dropdown.active .dropdown-menu{
+
+display:block;
+
+}
+
+
+
+.dropdown-menu a{
+
+font-size:18px;
+
+}
+
+
+
+/* mobile buttons */
+
+
+.admin-btn,
+.student-btn,
+.fees-btn{
+
+margin:15px auto;
+
+width:85%;
+
+font-size:22px!important;
+
+padding:20px!important;
+
+border-radius:22px;
+
+}
+
+
+
+.apply-btn{
+
+width:85%;
+
+margin:auto;
+
+}
+
+
+}
+
+/* ===== FINAL NAVBAR OVERRIDE ===== */
+
+.navbar{
+  width:100%!important;
+  background:#fff!important;
+  padding:14px 6%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:18px!important;
+  position:sticky!important;
+  top:0!important;
+  z-index:99999!important;
+  box-shadow:0 4px 18px rgba(0,0,0,.08)!important;
+}
+
+.logo{
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  flex-shrink:0!important;
+}
+
+.logo-img{
+  width:58px!important;
+  height:58px!important;
+  object-fit:contain!important;
+}
+
+.logo-text{
+  font-size:15px!important;
+  font-weight:800!important;
+  color:#003b88!important;
+  max-width:260px!important;
+  line-height:1.2!important;
+}
+
+.nav-menu{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:16px!important;
+  list-style:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+.nav-menu li{
+  list-style:none!important;
+}
+
+.nav-menu a{
+  text-decoration:none!important;
+  color:#111!important;
+  font-size:14px!important;
+  font-weight:700!important;
+  white-space:nowrap!important;
+}
+
+.dropdown{
+  position:relative!important;
+}
+
+.dropdown-menu{
+  position:absolute!important;
+  top:130%!important;
+  left:0!important;
+  min-width:245px!important;
+  background:#fff!important;
+  display:none!important;
+  padding:10px 0!important;
+  border-radius:14px!important;
+  box-shadow:0 18px 40px rgba(0,0,0,.16)!important;
+  z-index:999999!important;
+}
+
+.dropdown:hover .dropdown-menu{
+  display:block!important;
+}
+
+.dropdown-menu a{
+  display:block!important;
+  padding:12px 18px!important;
+  font-size:14px!important;
+}
+
+.admin-btn,
+.student-btn,
+.fees-btn{
+  color:#fff!important;
+  padding:12px 18px!important;
+  border-radius:14px!important;
+  font-size:13px!important;
+  font-weight:800!important;
+}
+
+.admin-btn{background:linear-gradient(135deg,#ffb000,#ff7a00)!important;}
+.student-btn{background:linear-gradient(135deg,#003b9f,#0077ff)!important;}
+.fees-btn{background:linear-gradient(135deg,#009d3a,#00d45a)!important;}
+
+.apply-btn{
+  background:#ffc107!important;
+  color:#111!important;
+  padding:13px 24px!important;
+  border-radius:35px!important;
+  font-weight:800!important;
+}
+
+.mobile-menu-toggle{
+  display:none!important;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+  .navbar{
+    padding:12px 16px!important;
+  }
+
+  .logo-img{
+    width:52px!important;
+    height:52px!important;
+  }
+
+  .logo-text{
+    font-size:13px!important;
+    max-width:190px!important;
+  }
+
+  .mobile-menu-toggle{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:46px!important;
+    height:46px!important;
+    background:#fff!important;
+    border:2px solid #f5b400!important;
+    border-radius:12px!important;
+    margin-left:auto!important;
+    z-index:1000001!important;
+  }
+
+  .hamburger{
+    display:block!important;
+    width:24px!important;
+    height:3px!important;
+    background:#003b88!important;
+    margin:3px 0!important;
+    border-radius:5px!important;
+  }
+
+  .nav-menu{
+    position:fixed!important;
+    top:0!important;
+    right:-100%!important;
+    width:84%!important;
+    max-width:360px!important;
+    height:100vh!important;
+    background:#fff!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    gap:0!important;
+    padding:95px 18px 30px!important;
+    box-shadow:-15px 0 40px rgba(0,0,0,.18)!important;
+    transition:right .35s ease!important;
+    overflow-y:auto!important;
+    z-index:100000!important;
+  }
+
+  .nav-menu.active{
+    right:0!important;
+  }
+
+  .nav-menu li{
+    width:100%!important;
+    border-bottom:1px solid #eee!important;
+  }
+
+  .nav-menu a{
+    display:block!important;
+    width:100%!important;
+    text-align:center!important;
+    padding:16px 10px!important;
+    font-size:18px!important;
+  }
+
+  .dropdown-menu{
+    position:static!important;
+    min-width:100%!important;
+    display:none!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+    padding:0!important;
+    background:#f8fafc!important;
+  }
+
+  .dropdown.active .dropdown-menu{
+    display:block!important;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display:none!important;
+  }
+
+  .dropdown.active:hover .dropdown-menu{
+    display:block!important;
+  }
+
+  .dropdown-menu a{
+    font-size:16px!important;
+    padding:14px 8px!important;
+  }
+
+  .admin-btn,
+  .student-btn,
+  .fees-btn,
+  .apply-btn{
+    width:100%!important;
+    margin:10px 0!important;
+    padding:17px!important;
+    border-radius:18px!important;
+    font-size:20px!important;
+  }
+}
