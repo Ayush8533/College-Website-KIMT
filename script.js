@@ -1,29 +1,58 @@
-// ================= MOBILE MENU TOGGLE =================
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const navMenu = document.querySelector('.nav-menu');
+// ================= MOBILE MENU FINAL =================
 
-if (mobileMenuToggle) {
-  mobileMenuToggle.addEventListener('click', () => {
-    const isExpanded = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
-    mobileMenuToggle.setAttribute('aria-expanded', !isExpanded);
-    navMenu.classList.toggle('active');
-  });
+const menuBtn = document.querySelector(".mobile-menu-toggle");
+const menu = document.querySelector(".nav-menu");
 
-  const navLinks = document.querySelectorAll('.nav-menu a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenuToggle.setAttribute('aria-expanded', 'false');
-      navMenu.classList.remove('active');
-    });
-  });
+if(menuBtn){
 
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.navbar')) {
-      mobileMenuToggle.setAttribute('aria-expanded', 'false');
-      navMenu.classList.remove('active');
-    }
-  });
+menuBtn.addEventListener("click",()=>{
+
+menu.classList.toggle("active");
+
+});
+
 }
+
+
+// About dropdown mobile
+
+const dropdownBtn = document.querySelector(".dropdown-toggle");
+const dropdown = document.querySelector(".dropdown");
+
+
+if(dropdownBtn){
+
+dropdownBtn.addEventListener("click",(e)=>{
+
+if(window.innerWidth <= 768){
+
+e.preventDefault();
+
+dropdown.classList.toggle("active");
+
+}
+
+});
+
+}
+
+
+// Link click hone ke baad menu close
+
+document.querySelectorAll(".nav-menu a")
+.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+if(!link.classList.contains("dropdown-toggle")){
+
+menu.classList.remove("active");
+
+}
+
+});
+
+});
 
 // ================= DROPDOWN =================
 document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
