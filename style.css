@@ -1915,75 +1915,96 @@ footer,
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* ================= PORTAL BUTTONS ================= */
-
+/* Premium portal buttons */
+.portal-btn,
 .mobile-portal {
-  padding: 10px 18px !important;
-  border-radius: 30px;
-  font-weight: 700 !important;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-  display: inline-block;
-  border: none;
+  padding: 10px 16px !important;
+  border-radius: 16px;
+  font-weight: 800 !important;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  min-height: 52px;
+  box-shadow: 0 8px 22px rgba(0,0,0,.14);
 }
 
+.admin-btn { background: linear-gradient(135deg,#ffb703,#ff8800); color:#111 !important; }
+.student-btn { background: linear-gradient(135deg,#003b8e,#0066ff); color:#fff !important; }
+.fees-btn { background: linear-gradient(135deg,#009a44,#00c853); color:#fff !important; }
 
-/* Admin Button */
-.admin-btn {
-  background: linear-gradient(135deg, #ffb703, #ff8800);
-  color: #111 !important;
+.about-btn {
+  padding: 10px 16px !important;
+  border: 1px solid #e8eef8;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  font-weight: 800 !important;
 }
 
-
-/* Student Button */
-.student-btn {
-  background: linear-gradient(135deg, #003b8e, #0066ff);
-  color: white !important;
+.nav-menu {
+  align-items: center;
 }
 
-
-/* Fees Button */
-.fees-btn {
-  background: linear-gradient(135deg, #008f45, #00c853);
-  color: white !important;
+.nav-menu > li {
+  display: flex;
+  align-items: center;
 }
 
-
-.mobile-portal:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+/* Desktop apply button size fix */
+.apply-btn,
+.nav-cta,
+.navbar .btn,
+.navbar .apply-now {
+  padding: 14px 28px !important;
+  border-radius: 999px !important;
+  font-size: 16px !important;
+  min-width: 128px;
+  height: auto !important;
 }
 
-
-/* ================= MOBILE NAVBAR FIX ================= */
-
+/* Mobile clean menu */
 @media (max-width: 768px) {
+  .nav-menu {
+    top: 92px;
+    padding: 26px 18px;
+    gap: 18px;
+  }
+
+  .nav-menu > li {
+    width: 100%;
+    justify-content: center;
+    border-bottom: none !important;
+  }
 
   .nav-menu .mobile-portal {
-    width: 85%;
-    margin: 8px auto;
-    text-align: center;
-    padding: 14px 20px !important;
-    border-radius: 14px;
-    font-size: 16px;
+    width: 88% !important;
+    min-height: 64px;
+    border-radius: 18px;
+    font-size: 20px;
+    margin: 0 auto;
   }
 
+  .admin-btn::before { content: "🔐 "; }
+  .student-btn::before { content: "🎓 "; }
+  .fees-btn::before { content: "💳 "; }
 
-  .nav-menu li:has(.mobile-portal) {
-    border-bottom: none;
+  .about-btn {
+    width: 100%;
+    justify-content: space-between !important;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 18px 0 !important;
+    font-size: 20px;
   }
 
-
-  .admin-btn::before {
-    content: "🔐 ";
+  .dropdown-menu {
+    position: static !important;
+    box-shadow: none !important;
+    width: 100% !important;
   }
-
-  .student-btn::before {
-    content: "🎓 ";
-  }
-
-  .fees-btn::before {
-    content: "💳 ";
-  }
-
 }
