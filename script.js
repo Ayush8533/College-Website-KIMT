@@ -1,62 +1,53 @@
-// ================= MOBILE MENU FINAL =================
+// ================= MOBILE MENU (DRAWER) =================
 
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navMenuWrapper = document.querySelector('.nav-menu-wrapper');
 const navMenu = document.querySelector('.nav-menu');
-const dropdown = document.querySelector('.dropdown');
-const dropdownToggle = document.querySelector('.dropdown-toggle');
 
-if (mobileMenuToggle && navMenu) {
+function closeMobileMenu() {
+  if (!navMenuWrapper) return;
+  navMenuWrapper.classList.remove('menu-open');
+  mobileMenuToggle?.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+  document.querySelectorAll('.dropdown.active').forEach(dd => dd.classList.remove('active'));
+}
+
+function openMobileMenu() {
+  if (!navMenuWrapper) return;
+  navMenuWrapper.classList.add('menu-open');
+  mobileMenuToggle?.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+
+if (mobileMenuToggle && navMenuWrapper) {
   mobileMenuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    mobileMenuToggle.setAttribute(
-      'aria-expanded',
-      navMenu.classList.contains('active')
-    );
+    const isOpen = navMenuWrapper.classList.contains('menu-open');
+    isOpen ? closeMobileMenu() : openMobileMenu();
   });
 }
 
-if (dropdownToggle && dropdown) {
-  dropdownToggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      dropdown.classList.toggle('active');
+// Tap outside the drawer (on the dark overlay) closes the menu
+if (navMenuWrapper) {
+  navMenuWrapper.addEventListener('click', (e) => {
+    if (e.target === navMenuWrapper) {
+      closeMobileMenu();
     }
   });
 }
 
-document.querySelectorAll('.nav-menu a').forEach((link) => {
+// Close menu when a normal (non-dropdown-toggle) link is tapped
+document.querySelectorAll('.nav-menu > li > a:not(.dropdown-toggle)').forEach((link) => {
   link.addEventListener('click', () => {
-    if (!link.classList.contains('dropdown-toggle')) {
-      navMenu.classList.remove('active');
-      dropdown?.classList.remove('active');
-      mobileMenuToggle?.setAttribute('aria-expanded', 'false');
-    }
+    closeMobileMenu();
   });
 });
 
-// Link click hone ke baad menu close
-
-document.querySelectorAll(".nav-menu a")
-.forEach(link=>{
-
-link.addEventListener("click",()=>{
-
-if(!link.classList.contains("dropdown-toggle")){
-
-menu.classList.remove("active");
-
-}
-
-});
-
-});
-
-// ================= DROPDOWN =================
+// ================= DROPDOWN (About) =================
 document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 992) {
       e.preventDefault();
-      e.stopImmediatePropagation(); // stop the smooth-scroll listener below from also firing on this same tap
+      e.stopPropagation();
       const dropdown = toggle.closest('.dropdown');
 
       document.querySelectorAll('.dropdown').forEach(dd => {
@@ -68,22 +59,28 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   });
 });
 
-// ================= SMOOTH SCROLL FIXED =================
+// Close drawer automatically if window is resized back to desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 992) {
+    closeMobileMenu();
+  }
+});
+
+// ================= SMOOTH SCROLL =================
 document.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', function (e) {
     const href = this.getAttribute('href');
 
-    // ❌ Skip empty or external links
+    // Skip empty, external, or non-hash links
     if (!href || href === '#' || href.startsWith('http')) {
       return;
     }
 
-    // ✔ Only internal scroll links
+    // Only internal scroll links
     if (href.startsWith('#')) {
-      e.preventDefault();
-
       const target = document.querySelector(href);
       if (target) {
+        e.preventDefault();
         window.scrollTo({
           top: target.offsetTop - 80,
           behavior: 'smooth'
@@ -435,11 +432,5 @@ if (inquiryForm) {
     inquiryForm.reset();
   });
 }
-document.getElementById('chatbotToggle').addEventListener('click', function () {
-    document.getElementById('chatbotPanel').classList.toggle('open');
-});
 
 console.log("✅ Script Loaded Successfully");
-document.getElementById('chatbotToggle').onclick = function() {
-    document.getElementById('chatbotPanel').classList.toggle('open');
-};
