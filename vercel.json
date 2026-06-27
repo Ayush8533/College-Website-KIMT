@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://kimt-portal.onrender.com/api/:path*"
+    }
+  ]
+}
