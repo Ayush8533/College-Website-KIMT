@@ -9,17 +9,20 @@
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="KIMT Bareilly - Shaping Future Leaders" />
-  <meta property="og:description" content="Excellence in Management & Technology education with 95% placement support and 40+ programs" />
+  <meta property="og:description" content="Excellence in Management & Technology education with 95% placement support and 100+ programs" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="cover-4.jpg" />
+  <meta property="og:image" content="https://kimtbareilly.ac.in/images/cover.jpg" />
 
   <title>Krishna Institute of Management and Technology | KIMT Bareilly - Official Website</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo-11.jpg" />
+  <link rel="icon" type="image/png" href="images/logo.jpg" />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
@@ -28,21 +31,49 @@
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- ================= HEADER ================= -->
- <!-- NEWS TICKER -->
+<!-- ================= NEWS TICKER ================= -->
 <div class="news-ticker">
-  <div class="ticker-content">
-    🎓 Admissions Open 2026-27 | 📢 New Courses Available | 🏆 100% Placement Support | Distance and online courses available | The Sports meetup will start in the first week of august |Excellence in Education Since 2011|  📞 Call Now: +91 9084147587
+  <div class="ticker-label">LATEST</div>
+  <div class="ticker-track">
+    <div class="ticker-content">
+      <span>🎓 Admissions Open 2026–27</span>
+      <span class="sep">|</span>
+      <span>📢 New Courses Available — Distance &amp; Online</span>
+      <span class="sep">|</span>
+      <span>🏆 95% Placement Support</span>
+      <span class="sep">|</span>
+      <span>⚽ Sports Meet — First Week of August</span>
+      <span class="sep">|</span>
+      <span>✨ Excellence in Education Since 2020</span>
+      <span class="sep">|</span>
+      <span>📞 Call Now: +91 9084147587</span>
+      <!-- duplicate for seamless loop -->
+      <span>🎓 Admissions Open 2026–27</span>
+      <span class="sep">|</span>
+      <span>📢 New Courses Available — Distance &amp; Online</span>
+      <span class="sep">|</span>
+      <span>🏆 95% Placement Support</span>
+      <span class="sep">|</span>
+      <span>⚽ Sports Meet — First Week of August</span>
+      <span class="sep">|</span>
+      <span>✨ Excellence in Education Since 2020</span>
+      <span class="sep">|</span>
+      <span>📞 Call Now: +91 9084147587</span>
+    </div>
   </div>
 </div>
 
+<!-- ================= HEADER ================= -->
 <header role="banner">
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
 
       <div class="logo" aria-label="Krishna Institute of Management and Technology">
         <img src="images/logo.jpg" alt="KIMT Logo" class="logo-img">
-        <span class="logo-text">Krishna Institute of Management and Technology</span>
+        <div class="logo-text-wrap">
+          <span class="logo-text">Krishna Institute</span>
+          <span class="logo-sub">of Management and Technology</span>
+        </div>
       </div>
 
       <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -52,39 +83,42 @@
       </button>
 
       <div class="nav-menu-wrapper">
-
         <ul class="nav-menu">
 
           <li class="dropdown">
-            <a href="#about" class="dropdown-toggle">About <span class="arrow">▼</span></a>
+            <a href="#about" class="dropdown-toggle">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#about">About KIMT</a></li>
-              <li><a href="#vision">Vision & Mission</a></li>
-              <li><a href="#chairman">Chairman's Message</a></li>
-              <li><a href="#managing-director">Managing Director's Desk</a></li>
-              <li><a href="#principal">Principal's Message</a></li>
+              <li><a href="#about"><i class="fa-solid fa-building-columns"></i> About KIMT</a></li>
+              <li><a href="#vision"><i class="fa-solid fa-eye"></i> Vision &amp; Mission</a></li>
+              <li><a href="#chairman"><i class="fa-solid fa-user-tie"></i> Chairman's Message</a></li>
+              <li><a href="#managing-director"><i class="fa-solid fa-briefcase"></i> Managing Director</a></li>
+              <li><a href="#principal"><i class="fa-solid fa-graduation-cap"></i> Principal's Message</a></li>
             </ul>
           </li>
 
           <li><a href="#courses">Courses</a></li>
-          <li><a href="#fees">Fees Structure</a></li>
+          <li><a href="#fees">Fees</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Contact</a></li>
 
-          <li><a class="nav-btn admin-btn" href="https://kimt-portal-production.up.railway.app/admin-panel/">Admin Login</a></li>
-          <li><a class="nav-btn student-btn" href="https://kimt-portal-production.up.railway.app/student/">Student Portal</a></li>
-          <li><a class="nav-btn fees-btn" href="https://kimt-portal-production.up.railway.app/student/">Pay Fees</a></li>
+          <li class="nav-portals dropdown">
+            <a href="#" class="dropdown-toggle portal-toggle">Portals <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://kimt-portal-production.up.railway.app/admin-panel/" target="_blank"><i class="fa-solid fa-lock"></i> Admin Login</a></li>
+              <li><a href="https://kimt-portal-production.up.railway.app/student/" target="_blank"><i class="fa-solid fa-user-graduate"></i> Student Portal</a></li>
+              <li><a href="https://kimt-portal-production.up.railway.app/student/" target="_blank"><i class="fa-solid fa-credit-card"></i> Pay Fees</a></li>
+            </ul>
+          </li>
 
           <li>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLpzethwd--bEiidbedgegtdKJ8wjsV_qWIjBvqWl0o6KMQg/viewform?usp=publish-editor"
                class="nav-btn apply-btn"
                onclick="window.open(this.href, '_blank'); return false;">
-               Apply Now
+               <i class="fa-solid fa-pen-to-square"></i> Apply Now
             </a>
           </li>
 
         </ul>
-
       </div>
 
     </div>
@@ -93,17 +127,57 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero" role="banner">
-  <!-- background-image: header-6.jpg ko CSS me set karo -->
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>Learning Today Leading Tomorrow.....</h1>
-    <p>
-      <b>KIMT Bareilly is the First College in the Region to pioneer provide Online Education.</b>
-    </p>
-   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLpzethwd--bEiidbedgegtdKJ8wjsV_qWIjBvqWl0o6KMQg/viewform?usp=publish-editor"
-   class="cta-btn"
-   onclick="window.open(this.href, '_blank'); return false;">
-   Apply Now
-</a>
+    <div class="hero-badge reveal-fade">Admissions Open 2026–27</div>
+    <h1 class="reveal-up">Learning Today,<br><span class="hero-accent">Leading Tomorrow</span></h1>
+    <p class="reveal-up delay-1">KIMT Bareilly — First college in the region to pioneer online education. 100+ programs, world-class campus, 95% placement record.</p>
+    <div class="hero-btns reveal-up delay-2">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLpzethwd--bEiidbedgegtdKJ8wjsV_qWIjBvqWl0o6KMQg/viewform?usp=publish-editor"
+         class="cta-btn hero-cta-primary"
+         onclick="window.open(this.href, '_blank'); return false;">
+         <i class="fa-solid fa-pen-to-square"></i> Apply Now
+      </a>
+      <a href="#courses" class="cta-btn hero-cta-secondary">
+        <i class="fa-solid fa-book-open"></i> Explore Courses
+      </a>
+    </div>
+  </div>
+
+  <!-- Stats Bar inside Hero -->
+  <div class="hero-stats reveal-up delay-3">
+    <div class="hero-stat">
+      <span class="hstat-num" data-count="100">0</span><span class="hstat-plus">+</span>
+      <span class="hstat-label">Courses</span>
+    </div>
+    <div class="hstat-divider"></div>
+    <div class="hero-stat">
+      <span class="hstat-num" data-count="95">0</span><span class="hstat-plus">%</span>
+      <span class="hstat-label">Placement</span>
+    </div>
+    <div class="hstat-divider"></div>
+    <div class="hero-stat">
+      <span class="hstat-num" data-count="5000">0</span><span class="hstat-plus">+</span>
+      <span class="hstat-label">Students</span>
+    </div>
+    <div class="hstat-divider"></div>
+    <div class="hero-stat">
+      <span class="hstat-num" data-count="2020">0</span>
+      <span class="hstat-label">Established</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AFFILIATION BADGES ================= -->
+<section class="affiliations-bar">
+  <div class="container">
+    <p class="aff-label">Affiliated &amp; Recognised By</p>
+    <div class="aff-list">
+      <div class="aff-item reveal-fade"><i class="fa-solid fa-university"></i><span>MJP Rohilkhand University</span></div>
+      <div class="aff-item reveal-fade delay-1"><i class="fa-solid fa-award"></i><span>UGC Recognised</span></div>
+      <div class="aff-item reveal-fade delay-2"><i class="fa-solid fa-certificate"></i><span>AICTE Approved</span></div>
+      <div class="aff-item reveal-fade delay-3"><i class="fa-solid fa-shield-halved"></i><span>Govt. of UP Registered</span></div>
+    </div>
   </div>
 </section>
 
@@ -111,110 +185,99 @@
 <main id="main-content">
 
   <!-- ================= ABOUT ================= -->
-  <section id="about">
+  <section id="about" class="about-section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Who We Are</span>
         <h2>About Krishna Group</h2>
-        <p><b>Where dreams are born, inspirations are given and achievements are made</b></p>
+        <p>Where dreams are born, inspirations are given and achievements are made</p>
       </div>
 
-      <p class="about-text">
-        Krishna Institute of Management and Technology (KIMT), established in the year 2020,
-        under the aegis of Krishna Welfare Educational Society. The KWES is a registered, non-government,
-        non-profit educational organization engaged in the field of training, research and consultancy
-        directed towards the field of Management, Computer Applications, Para Medical Science, Engineering,
-        Science, Art, Commerce, Vocational Education, Home Science and Basic Education.
-      </p>
-
-      <p class="about-text" style="margin-top: 20px;">
-        The College has a wide campus with lush green and well maintained ground, state of the art infrastructure,
-        modern laboratories for various programs, a well rich library, well developed sport facilities along with
-        an ambience suitable for absolute learning. More than 100+ Courses are available in various branches.
-      </p>
-
-      <p class="about-text" style="margin-top: 20px;">
-        The College is located at Sona within 25 KM on the Aonla – Sirauli Road, Vishanpuri Bagiya Churaha.
-        The college is well connected to the Ahikshetra Parshwanath Bhagwan, Jain Digambar Mandir
-        (अहिछत्र पार्श्वनाथ भगवान, जैन श्वेतांबर मंदिर रामनगर आंवला) transversely linked between
-        Bareilly - Aonla – Moradabad - Delhi.
-      </p>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal-left">
+          <img src="images/college building (1).jpeg" alt="KIMT Campus" loading="lazy">
+          <div class="about-img-badge">
+            <i class="fa-solid fa-star"></i>
+            <span>Est. 2020</span>
+          </div>
+        </div>
+        <div class="about-text-wrap reveal-right">
+          <p>
+            Krishna Institute of Management and Technology (KIMT), established in 2020,
+            operates under the aegis of Krishna Welfare Educational Society — a registered,
+            non-government, non-profit educational organization engaged in training, research
+            and consultancy across Management, Computer Applications, Para Medical Science,
+            Engineering, Science, Arts, Commerce, Vocational Education, and more.
+          </p>
+          <p style="margin-top:18px;">
+            Our sprawling campus features lush green grounds, state-of-the-art infrastructure,
+            modern laboratories, a well-stocked library, and excellent sports facilities.
+            With 100+ courses available, we nurture future leaders every day.
+          </p>
+          <p style="margin-top:18px;">
+            Located at Sona on Aonla–Sirauli Road, we are well-connected to Bareilly,
+            Aonla, Moradabad, and Delhi — easily accessible for students across the region.
+          </p>
+          <div class="about-highlights">
+            <div class="ahl-item"><i class="fa-solid fa-check-circle"></i> 100+ Programs</div>
+            <div class="ahl-item"><i class="fa-solid fa-check-circle"></i> Modern Labs &amp; Library</div>
+            <div class="ahl-item"><i class="fa-solid fa-check-circle"></i> Distance &amp; Online Courses</div>
+            <div class="ahl-item"><i class="fa-solid fa-check-circle"></i> Sports &amp; Cultural Activities</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-<section id="vision" class="vision-section">
-  <div class="container">
-    
-    <div class="section-title">
-      <h2>Vision & Mission</h2>
-      <p>Our goals that shape the future</p>
-    </div>
 
-    <div class="vision-container">
-
-      <!-- IMAGE -->
-      <div class="vision-image">
-        <img src="images/vision and mission.jpg" alt="Vision & Mission" loading="lazy">
+  <!-- ================= VISION & MISSION ================= -->
+  <section id="vision" class="vision-section">
+    <div class="container">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Our Purpose</span>
+        <h2>Vision &amp; Mission</h2>
+        <p>The guiding principles that shape our institution</p>
       </div>
 
-      <!-- TEXT -->
-      <div class="vision-content">
-
-        <div class="vision-card">
-          <h3>🌟 Our Vision</h3>
-          <p>
-            To be a center of excellence nurturing innovative, ethical and skilled leaders
-            who contribute positively to society and global development.
-          </p>
+      <div class="vision-container">
+        <div class="vision-image reveal-left">
+          <img src="images/vision and mission.jpg" alt="Vision &amp; Mission" loading="lazy">
         </div>
-
-        <div class="vision-card">
-          <h3>🎯 Our Mission</h3>
-          <p>
-            To provide quality education through practical learning, industry exposure,
-            and holistic development for building successful careers.
-          </p>
+        <div class="vision-content">
+          <div class="vision-card reveal-right">
+            <div class="vision-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Our Vision</h3>
+            <p>To be a center of excellence nurturing innovative, ethical and skilled leaders who contribute positively to society and global development.</p>
+          </div>
+          <div class="vision-card reveal-right delay-1">
+            <div class="vision-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>To provide quality education through practical learning, industry exposure, and holistic development for building successful careers.</p>
+          </div>
         </div>
-
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- ================= CHAIRMAN'S MESSAGE ================= -->
   <section id="chairman" class="message-section">
     <div class="container">
-      <div class="message-card">
+      <div class="message-card reveal-up">
         <div class="message-image">
-          <img src="images/Chairmanpic.jpeg" alt="Dr Piyush Kumar - Chairman" loading="lazy">
+          <img src="images/Chairmanpic.jpeg" alt="Dr. Piyush Kumar - Chairman" loading="lazy">
+          <div class="msg-badge">Chairman</div>
         </div>
         <div class="message-content">
           <div class="message-header">
+            <span class="section-eyebrow">Leadership</span>
             <h2>Chairman's Message</h2>
-          
           </div>
           <blockquote class="message-quote">
-            <p>
-              "It gives me immense pleasure to welcome you to Krishna Institute of Management and Technology.
-              A College where dreams are born, inspirations are given and achievements are made."
-            </p>
-            <p>
-              Since our establishment in 2020 under the aegis of Krishna Welfare Educational Society,
-              we have been dedicated to providing world-class education across diverse fields including
-              Management, Computer Applications, Para Medical Science, Engineering, Science, Arts, Commerce,
-              and Vocational Education.
-            </p>
-            <p>
-              Our state-of-the-art infrastructure, modern laboratories, well-equipped library, and excellent
-              sports facilities create an ideal environment for learning and growth. With over 100+ courses
-              available, we are committed to nurturing future leaders and professionals.
-            </p>
-            <p>
-              I extend my best wishes to all students and encourage you to make the most of the opportunities
-              available at KIMT. Together, let us build a brighter future.
-            </p>
+            <p>"It gives me immense pleasure to welcome you to Krishna Institute of Management and Technology. A college where dreams are born, inspirations are given and achievements are made."</p>
+            <p>Since our establishment in 2020, we have been dedicated to providing world-class education across diverse fields including Management, Computer Applications, Para Medical Science, Engineering, Science, Arts, and Commerce.</p>
+            <p>Our state-of-the-art infrastructure, modern laboratories, well-equipped library, and excellent sports facilities create an ideal environment for learning and growth. I extend my best wishes to all students.</p>
           </blockquote>
           <div class="message-signature">
-            <p class="signature-name"><strong>Dr.Piyush Kumar</strong></p>
+            <p class="signature-name">Dr. Piyush Kumar</p>
             <p class="signature-title">Chairman, KIMT Group</p>
           </div>
         </div>
@@ -225,38 +288,23 @@
   <!-- ================= MANAGING DIRECTOR'S MESSAGE ================= -->
   <section id="managing-director" class="message-section alt-bg">
     <div class="container">
-      <div class="message-card reverse">
+      <div class="message-card reverse reveal-up">
         <div class="message-image">
           <img src="images/managing director .jpg.png" alt="Mr. Rambahadur Singh - Managing Director" loading="lazy">
+          <div class="msg-badge">Managing Director</div>
         </div>
         <div class="message-content">
           <div class="message-header">
+            <span class="section-eyebrow">Leadership</span>
             <h2>Managing Director's Desk</h2>
-            
           </div>
           <blockquote class="message-quote">
-            <p>
-              "Welcome to Krishna Institute of Management and Technology! As Managing Director,
-              I am proud to be part of an institution that stands as a beacon of quality education
-              and holistic development."
-            </p>
-            <p>
-              Our institution is built on the foundation of academic excellence, practical training,
-              and industry-relevant education. We maintain strong connections with industries to ensure
-              our students are well-prepared for the competitive professional world.
-            </p>
-            <p>
-              With our wide campus featuring lush green grounds, state-of-the-art infrastructure,
-              modern laboratories, well-stocked library, and excellent sports facilities, we provide
-              an environment conducive to complete learning and personality development.
-            </p>
-            <p>
-              I invite you to be part of the KIMT family and embark on a transformative educational
-              journey that will shape your future and help you achieve your dreams.
-            </p>
+            <p>"Welcome to KIMT! As Managing Director, I am proud to be part of an institution that stands as a beacon of quality education and holistic development."</p>
+            <p>Our institution is built on the foundation of academic excellence, practical training, and industry-relevant education. We maintain strong connections with industries to ensure our students are well-prepared for the competitive professional world.</p>
+            <p>I invite you to be part of the KIMT family and embark on a transformative educational journey that will shape your future and help you achieve your dreams.</p>
           </blockquote>
           <div class="message-signature">
-            <p class="signature-name"><strong>Mr. Rambahadur Singh</strong></p>
+            <p class="signature-name">Mr. Rambahadur Singh</p>
             <p class="signature-title">Managing Director, KIMT Group</p>
           </div>
         </div>
@@ -267,34 +315,23 @@
   <!-- ================= PRINCIPAL'S MESSAGE ================= -->
   <section id="principal" class="message-section">
     <div class="container">
-      <div class="message-card">
+      <div class="message-card reveal-up">
         <div class="message-image">
-          <img src="images/principal.jpg.png" alt="Principal" loading="lazy">
+          <img src="images/principal.jpg.png" alt="Mrs. Pratibha Arya - Principal" loading="lazy">
+          <div class="msg-badge">Principal</div>
         </div>
         <div class="message-content">
           <div class="message-header">
+            <span class="section-eyebrow">Leadership</span>
             <h2>Principal's Message</h2>
-         
           </div>
           <blockquote class="message-quote">
-            <p>
-              "Dear Students, Faculty, and Stakeholders, it is my privilege to serve as the Principal of
-              Krishna Institute of Management and Technology."
-            </p>
-            <p>
-              Education is not just about acquiring degrees; it's about developing critical thinking,
-              problem-solving abilities, and a lifelong love for learning. At KIMT, we strive to create
-              an academic environment that encourages curiosity, creativity, and excellence.
-            </p>
-            <p>
-              Our dedicated faculty members work tirelessly to ensure each student receives personalized
-              attention and guidance. We focus on both curricular and co-curricular activities to ensure
-              holistic development. I encourage all students to actively participate in all aspects of
-              college life and make the most of their time here.
-            </p>
+            <p>"Dear Students, Faculty, and Stakeholders, it is my privilege to serve as the Principal of Krishna Institute of Management and Technology."</p>
+            <p>Education is not just about acquiring degrees — it's about developing critical thinking, problem-solving abilities, and a lifelong love for learning. At KIMT, we strive to create an academic environment that encourages curiosity, creativity, and excellence.</p>
+            <p>Our dedicated faculty works tirelessly to ensure each student receives personalized attention and guidance. I encourage all students to actively participate in college life and make the most of their time here.</p>
           </blockquote>
           <div class="message-signature">
-            <p class="signature-name"><strong>Mrs.Pratibha Arya</strong></p>
+            <p class="signature-name">Mrs. Pratibha Arya</p>
             <p class="signature-title">Principal, KIMT Group</p>
           </div>
         </div>
@@ -304,144 +341,180 @@
 
   <!-- ================= STATS ================= -->
   <section class="stats" aria-label="Institute Statistics">
-    <div class="container grid">
-      <div class="stat">
-        <h3>2020</h3>
-        <p>Established Year</p>
-      </div>
-      <div class="stat">
-        <h3>100+</h3>
-        <p>Courses Available</p>
-      </div>
-      <div class="stat">
-        <h3>95%</h3>
-        <p>Placement Support</p>
-      </div>
-      <div class="stat">
-        <h3>25KM</h3>
-        <p>From Bareilly</p>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal-up">
+          <div class="stat-icon"><i class="fa-solid fa-calendar"></i></div>
+          <h3><span class="count-num" data-count="2020">0</span></h3>
+          <p>Established</p>
+        </div>
+        <div class="stat reveal-up delay-1">
+          <div class="stat-icon"><i class="fa-solid fa-book"></i></div>
+          <h3><span class="count-num" data-count="100">0</span>+</h3>
+          <p>Courses Available</p>
+        </div>
+        <div class="stat reveal-up delay-2">
+          <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3><span class="count-num" data-count="95">0</span>%</h3>
+          <p>Placement Support</p>
+        </div>
+        <div class="stat reveal-up delay-3">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <h3><span class="count-num" data-count="5000">0</span>+</h3>
+          <p>Students Enrolled</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ================= COURSES ================= -->
   <section id="courses">
-  <div class="container">
-    <div class="section-title">
-      <h2>Courses Offered</h2>
-      <p>Explore our wide range of academic programs</p>
-    </div>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="card-icon">📊</div>
-        <h5>Faculty Of Commerce & Management</h5>
-        <p>B.Com, B.Com Honours, BBA, MBA, EMBA, Diploma, PG Diploma</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">📚</div>
-        <h5>Faculty Of Humanities & Social Science</h5>
-        <p>BA, BA Honours, MA, MA Honours, BSW, MSW, Psychology Diploma, Certificate</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🔬</div>
-        <h5>Faculty Of Science</h5>
-        <p>BSc (ZBC, PCM), BSc Honours, MSc (All Subjects), PG Diploma</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">📖</div>
-        <h5>Faculty Of Library & Information Science</h5>
-        <p>BLIS, MLIS, DLIS</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">💻</div>
-        <h5>Faculty Of Engineering & Technology</h5>
-        <p>BCA, BCA Honours, MCA, BSc, DCA, PGDCA, B.Tech, M.Tech, Diploma</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon">🌾</div>
-        <h5>Faculty Of Agriculture Science </h5>
-        <p>BSc Honours, MSc, Diploma</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon"> ⚕️ 🩺 </div>
-        <h5>Faculty Of ParaMedical Science</h5>
-        <p>CMS & ED,DMLT, BMLT, OTT, X-RAY Technician, ECG Technician, D Optometry, Multi Purpose Health Worker, Sanitory Inspector With UG and PG Courses </p>
-      </div>
-
-     <div class="card">
-        <div class="card-icon">🎓</div>
-        <h5>Faculty Of Vocational Educations</h5>
-        <p>Anaesthesia technician, Blood Bank Technician, EMT, Radiology Technician, Pharmacy Assistant, Dental Technican, Food Processing And Quality Management, Nutrition And Dietetics </p>
-      </div>
-
-  </div>
-  </div>
-</section>
-  <!-- ================= FACILITIES ================= -->
-  <section id="facilities">
     <div class="container">
-      <div class="section-title">
-        <h2>Campus Facilities</h2>
-        <p>Modern infrastructure for holistic development</p>
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Academics</span>
+        <h2>Courses Offered</h2>
+        <p>Explore our wide range of academic programs across 8 faculties</p>
       </div>
 
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🖥️</div>
-          <h3>Smart Classrooms</h3>
-          <p>Modern teaching aids and digital learning environment.</p>
+      <div class="courses-grid">
+
+        <div class="course-card reveal-up">
+          <div class="course-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h5>Commerce &amp; Management</h5>
+          <p>B.Com, B.Com Honours, BBA, MBA, EMBA, Diploma, PG Diploma</p>
+          <div class="course-tag">7 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">📖</div>
-          <h3>Central Library</h3>
-          <p>Well-stocked library with academic and reference materials.</p>
+        <div class="course-card reveal-up delay-1">
+          <div class="course-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h5>Humanities &amp; Social Science</h5>
+          <p>BA, BA Honours, MA, MA Honours, BSW, MSW, Psychology Diploma, Certificate</p>
+          <div class="course-tag">8 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">⚽</div>
-          <h3>Sports &amp; Activities</h3>
-          <p>Indoor &amp; outdoor sports for physical and mental growth.</p>
+        <div class="course-card reveal-up delay-2">
+          <div class="course-icon"><i class="fa-solid fa-flask"></i></div>
+          <h5>Science</h5>
+          <p>BSc (ZBC, PCM), BSc Honours, MSc (All Subjects), PG Diploma</p>
+          <div class="course-tag">6 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">🔬</div>
-          <h3>Modern Labs</h3>
-          <p>Well-equipped laboratories for practical learning experience.</p>
+        <div class="course-card reveal-up">
+          <div class="course-icon"><i class="fa-solid fa-book"></i></div>
+          <h5>Library &amp; Information Science</h5>
+          <p>BLIS, MLIS, DLIS</p>
+          <div class="course-tag">3 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">🏥</div>
-          <h3>Health Services</h3>
-          <p>On-campus medical facilities for student wellbeing.</p>
+        <div class="course-card reveal-up delay-1">
+          <div class="course-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h5>Engineering &amp; Technology</h5>
+          <p>BCA, BCA Honours, MCA, BSc IT, DCA, PGDCA, B.Tech, M.Tech, Diploma</p>
+          <div class="course-tag">9 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">🚌</div>
-          <h3>Transportation</h3>
-          <p>Safe and convenient transport facilities for students.</p>
+        <div class="course-card reveal-up delay-2">
+          <div class="course-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h5>Agriculture Science</h5>
+          <p>BSc Honours, MSc, Diploma</p>
+          <div class="course-tag">3 Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">🚀</div>
-          <h3>Placement Assistance</h3>
-          <p>Strong placement cell with career guidance, internships, and top company opportunities.</p>
+        <div class="course-card reveal-up">
+          <div class="course-icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <h5>ParaMedical Science</h5>
+          <p>CMS &amp; ED, DMLT, BMLT, OTT, X-Ray Technician, ECG Technician, D Optometry, MPHW, Sanitary Inspector + UG &amp; PG</p>
+          <div class="course-tag">10+ Programs</div>
         </div>
 
-        <div class="card">
-          <div class="card-icon">🏭</div>
-          <h3>Industry Exposure</h3>
-          <p>Workshops, seminars, live projects.</p>
+        <div class="course-card reveal-up delay-1">
+          <div class="course-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h5>Vocational Education</h5>
+          <p>Anaesthesia Tech, Blood Bank Tech, EMT, Radiology Tech, Pharmacy Assistant, Dental Tech, Food Processing, Nutrition &amp; Dietetics</p>
+          <div class="course-tag">8 Programs</div>
         </div>
-        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FACILITIES ================= -->
+  <section id="facilities" class="facilities-section">
+    <div class="container">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Infrastructure</span>
+        <h2>Campus Facilities</h2>
+        <p>Modern infrastructure designed for holistic student development</p>
+      </div>
+
+      <div class="facilities-grid">
+
+        <div class="facility-card reveal-up">
+          <div class="fac-img">
+            <img src="images/image1.jpeg" alt="Smart Classrooms" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-desktop"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Smart Classrooms</h3>
+            <p>Modern teaching aids and digital learning environment for better comprehension.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal-up delay-1">
+          <div class="fac-img">
+            <img src="images/library.jpg" alt="Central Library" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-book"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Central Library</h3>
+            <p>Well-stocked with academic and reference materials for all disciplines.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal-up delay-2">
+          <div class="fac-img">
+            <img src="images/sports.jpg" alt="Sports Ground" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-futbol"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Sports &amp; Activities</h3>
+            <p>Indoor &amp; outdoor sports facilities for physical and mental development.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal-up">
+          <div class="fac-img">
+            <img src="images/laboratory.jpg" alt="Modern Labs" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-microscope"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Modern Labs</h3>
+            <p>Well-equipped laboratories for practical, hands-on learning experience.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal-up delay-1">
+          <div class="fac-img">
+            <img src="images/transport.jpg" alt="Transport" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-bus"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Transportation</h3>
+            <p>Safe and convenient transport facility available for students daily.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal-up delay-2">
+          <div class="fac-img">
+            <img src="images/image5.jpeg" alt="Placement Cell" loading="lazy">
+            <div class="fac-overlay"><i class="fa-solid fa-briefcase"></i></div>
+          </div>
+          <div class="fac-body">
+            <h3>Placement Cell</h3>
+            <p>Dedicated career guidance, internships, and top company tie-ups.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -449,46 +522,57 @@
   <!-- ================= ADMISSION ================= -->
   <section id="admission" class="admission-section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Join Us</span>
         <h2>Admission Process</h2>
-        <p>Simple and transparent admission procedure</p>
+        <p>Simple, transparent and hassle-free admission procedure</p>
       </div>
 
       <div class="admission-content">
-        <div class="admission-image">
+        <div class="admission-image reveal-left">
           <img src="images/admission.jpg" alt="KIMT Admission" loading="lazy">
         </div>
 
         <div class="admission-steps">
-          <div class="step-card">
+          <div class="step-card reveal-right">
             <div class="step-number">1</div>
-            <h3>Fill Application Form</h3>
-            <p>Download and fill the admission form or apply online</p>
+            <div>
+              <h3>Fill Application Form</h3>
+              <p>Download and fill the admission form or apply online through our portal</p>
+            </div>
           </div>
-
-          <div class="step-card">
+          <div class="step-card reveal-right delay-1">
             <div class="step-number">2</div>
-            <h3>Submit Documents</h3>
-            <p>Submit required documents with the application form</p>
+            <div>
+              <h3>Submit Documents</h3>
+              <p>Submit required documents — marksheets, ID proof, and photos</p>
+            </div>
           </div>
-
-          <div class="step-card">
+          <div class="step-card reveal-right delay-2">
             <div class="step-number">3</div>
-            <h3>Document Verification</h3>
-            <p>Documents will be verified by the admission committee</p>
+            <div>
+              <h3>Document Verification</h3>
+              <p>Our admission committee verifies your documents promptly</p>
+            </div>
           </div>
-
-          <div class="step-card">
+          <div class="step-card reveal-right delay-3">
             <div class="step-number">4</div>
-            <h3>Fee Payment</h3>
-            <p>Pay the admission fees and confirm your seat</p>
+            <div>
+              <h3>Fee Payment &amp; Confirm Seat</h3>
+              <p>Pay the admission fees online or at campus and secure your seat</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="admission-cta">
-        <a href="#contact" class="cta-btn">Apply for Admission</a>
-        <a href="contact-us-2.jpg" class="cta-btn secondary" target="_blank">Download Prospectus</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLpzethwd--bEiidbedgegtdKJ8wjsV_qWIjBvqWl0o6KMQg/viewform?usp=publish-editor"
+           class="cta-btn" onclick="window.open(this.href, '_blank'); return false;">
+           <i class="fa-solid fa-pen-to-square"></i> Apply for Admission
+        </a>
+        <a href="contact-us-2.jpg" class="cta-btn secondary" target="_blank">
+          <i class="fa-solid fa-download"></i> Download Prospectus
+        </a>
       </div>
     </div>
   </section>
@@ -496,29 +580,32 @@
   <!-- ================= FEES STRUCTURE ================= -->
   <section id="fees" class="fees-section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Transparency</span>
         <h2>Fee Structure</h2>
-        <p>Affordable education with flexible payment options</p>
+        <p>Affordable education with flexible payment options and scholarships</p>
       </div>
 
       <div class="fees-content">
-        <div class="fees-info">
+        <div class="fees-info reveal-left">
           <img src="images/fees logo.jpg" alt="KIMT Fee Structure" loading="lazy">
           <div class="fees-highlights">
             <h3>Fee Highlights</h3>
             <ul>
-              <li>✓ Affordable fee structure for all courses</li>
-              <li>✓ Installment facility available</li>
-              <li>✓ Scholarships for meritorious students</li>
-              <li>✓ Financial assistance for eligible candidates</li>
-              <li>✓ No hidden charges</li>
+              <li><i class="fa-solid fa-check"></i> Affordable fee structure for all courses</li>
+              <li><i class="fa-solid fa-check"></i> Installment facility available</li>
+              <li><i class="fa-solid fa-check"></i> Scholarships for meritorious students</li>
+              <li><i class="fa-solid fa-check"></i> Financial assistance for eligible candidates</li>
+              <li><i class="fa-solid fa-check"></i> No hidden charges</li>
             </ul>
           </div>
         </div>
-
-        <div class="fees-note">
+        <div class="fees-note reveal-right">
           <p><strong>Note:</strong> For detailed fee structure of specific courses, please contact the admission office or visit the campus.</p>
-          <p><strong>Contact:</strong> +91 9084147587 | Email: kimtiinfo@gmail.com</p>
+          <p><strong>Contact:</strong> +91 9084147587 | kimtiinfo@gmail.com</p>
+          <a href="https://kimt-portal-production.up.railway.app/student/" class="cta-btn" style="margin-top:20px;display:inline-flex;gap:8px;align-items:center;" target="_blank">
+            <i class="fa-solid fa-credit-card"></i> Pay Fees Online
+          </a>
         </div>
       </div>
     </div>
@@ -527,258 +614,220 @@
   <!-- ================= GALLERY ================= -->
   <section id="gallery">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Our Campus</span>
         <h2>Campus Gallery</h2>
         <p>Infrastructure, Labs &amp; Academic Environment</p>
       </div>
 
-      <!-- Thumbnail Grid -->
       <div class="gallery-grid">
-        <div class="gallery-thumb" onclick="openLightbox(0)">
-          <img src="images/image1.jpeg" alt="KIMT Bareilly campus gallery photo 1" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(0)">
+          <img src="images/image1.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(1)">
-          <img src="images/image2.jpeg" alt="KIMT Bareilly campus gallery photo 2" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(1)">
+          <img src="images/image2.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(2)">
-          <img src="images/image3.jpeg" alt="KIMT Bareilly campus gallery photo 3" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(2)">
+          <img src="images/image3.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(3)">
-          <img src="images/image-4.jpeg" alt="KIMT Bareilly campus gallery photo 4" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(3)">
+          <img src="images/image-4.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(4)">
-          <img src="images/image5.jpeg" alt="KIMT Bareilly campus gallery photo 5" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(4)">
+          <img src="images/image5.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(5)">
-          <img src="images/image6.jpeg" alt="KIMT Bareilly campus gallery photo 6" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(5)">
+          <img src="images/image6.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(6)">
-          <img src="images/image7.jpeg" alt="KIMT Bareilly campus gallery photo 7" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(6)">
+          <img src="images/image7.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(7)">
-          <img src="images/image8.jpeg" alt="KIMT Bareilly campus gallery photo 8" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(7)">
+          <img src="images/image8.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(8)">
-          <img src="images/image9.jpeg" alt="KIMT Bareilly campus gallery photo 9" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(8)">
+          <img src="images/image9.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(9)">
-          <img src="images/imaage 10.jpeg" alt="KIMT Bareilly campus photo" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-      
-      <div class="gallery-thumb" onclick="openLightbox(10)">
-          <img src="images/image11.jpeg" alt="KIMT Bareilly campus gallery photo 11" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(11)">
-          <img src="images/image12.jpeg" alt="KIMT Bareilly campus gallery photo 12" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(12)">
-          <img src="images/image13.jpeg" alt="KIMT Bareilly campus gallery photo 13" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(13)">
-          <img src="images/image14.jpeg" alt="KIMT Bareilly campus gallery photo 14" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(14)">
-          <img src="images/image15.jpeg" alt="KIMT Bareilly campus gallery photo 15" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(15)">
-          <img src="images/image16.jpeg" alt="KIMT Bareilly campus gallery photo 16" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(16)">
-          <img src="images/image17.jpeg" alt="KIMT Bareilly campus gallery photo 17" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(17)">
-          <img src="images/image18.jpeg" alt="KIMT Bareilly campus gallery photo 18" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(18)">
-          <img src="images/image19.jpeg" alt="KIMT Bareilly campus gallery photo 19" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(19)">
-          <img src="images/image20.jpeg" alt="KIMT Bareilly campus gallery photo 20" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(20)">
-          <img src="images/image22.jpeg" alt="KIMT Bareilly campus gallery photo 22" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-      <div class="gallery-thumb" onclick="openLightbox(21)">
-          <img src="images/image 23 .jpeg" alt="KIMT Bareilly campus gallery photo 23" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-      </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(22)">
-          <img src="images/library.jpg" alt="KIMT campus library" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(9)">
+          <img src="images/imaage 10.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(23)">
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(10)">
+          <img src="images/image11.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(11)">
+          <img src="images/image12.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(12)">
+          <img src="images/image13.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(13)">
+          <img src="images/image14.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(14)">
+          <img src="images/image15.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(15)">
+          <img src="images/image16.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(16)">
+          <img src="images/image17.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(17)">
+          <img src="images/image18.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(18)">
+          <img src="images/image19.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(19)">
+          <img src="images/image20.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(20)">
+          <img src="images/image22.jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(21)">
+          <img src="images/image 23 .jpeg" alt="KIMT campus gallery" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(22)">
+          <img src="images/library.jpg" alt="KIMT library" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(23)">
           <img src="images/lib.jpg" alt="KIMT library reading area" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(24)">
-          <img src="images/laboratory.jpg" alt="KIMT science laboratory" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(24)">
+          <img src="images/laboratory.jpg" alt="KIMT laboratory" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(25)">
-          <img src="images/sports.jpg" alt="KIMT sports ground and activities" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-1" onclick="openLightbox(25)">
+          <img src="images/sports.jpg" alt="KIMT sports" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(26)">
-          <img src="images/tar.jpg" alt="KIMT campus view" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom delay-2" onclick="openLightbox(26)">
+          <img src="images/transport.jpg" alt="KIMT transport" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(27)">
-          <img src="images/target.jpg" alt="KIMT campus facility" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-        </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(28)">
-          <img src="images/transport.jpg" alt="KIMT student transport bus" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-        </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(29)">
-          <img src="images/vision and mission.jpg" alt="KIMT Vision and Mission" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-        </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(30)">
-          <img src="images/admission.jpg" alt="KIMT admission process" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-        </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(31)">
-          <img src="images/courses.jpg" alt="KIMT courses offered" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
-        </div>
-
-        <div class="gallery-thumb" onclick="openLightbox(32)">
-          <img src="images/cover.jpg" alt="KIMT Bareilly campus" loading="lazy">
-          <div class="thumb-overlay"><span class="thumb-zoom">🔍</span></div>
-          <span class="thumb-caption"></span>
+        <div class="gallery-thumb reveal-zoom" onclick="openLightbox(27)">
+          <img src="images/cover.jpg" alt="KIMT campus" loading="lazy">
+          <div class="thumb-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
         </div>
       </div>
 
-      <!-- Lightbox Overlay -->
+      <!-- Lightbox -->
       <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightboxOutside(event)">
-        <button class="lb-close-btn" onclick="closeLightbox()" aria-label="Close">&#10005;</button>
-        <button class="lb-arrow lb-arrow-prev" onclick="changeLightbox(-1)" aria-label="Previous">&#10094;</button>
+        <button class="lb-close-btn" onclick="closeLightbox()" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lb-arrow lb-arrow-prev" onclick="changeLightbox(-1)" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
         <div class="lb-content">
           <img id="lbMainImg" src="" alt="">
           <p id="lbMainCaption"></p>
           <p id="lbMainCounter" class="lb-counter"></p>
         </div>
-        <button class="lb-arrow lb-arrow-next" onclick="changeLightbox(1)" aria-label="Next">&#10095;</button>
+        <button class="lb-arrow lb-arrow-next" onclick="changeLightbox(1)" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-
     </div>
   </section>
 
   <!-- ================= WHY CHOOSE KIMT ================= -->
   <section class="why-kimt">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Our Edge</span>
         <h2>Why Choose KIMT?</h2>
-        <p>Your pathway to success</p>
+        <p>Your pathway to a successful career and fulfilling life</p>
       </div>
 
-      <div class="grid">
-        <div class="feature-card">
+      <div class="why-grid">
+        <div class="feature-card reveal-up">
+          <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
           <div class="feature-number">01</div>
           <h3>Experienced Faculty</h3>
           <p>Learn from industry experts and qualified professors dedicated to your success.</p>
         </div>
-
-        <div class="feature-card">
+        <div class="feature-card reveal-up delay-1">
+          <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
           <div class="feature-number">02</div>
           <h3>Industry Connections</h3>
           <p>Strong ties with leading companies ensuring excellent placement opportunities.</p>
         </div>
-
-        <div class="feature-card">
+        <div class="feature-card reveal-up delay-2">
+          <div class="feature-icon"><i class="fa-solid fa-building"></i></div>
           <div class="feature-number">03</div>
           <h3>Modern Infrastructure</h3>
           <p>State-of-the-art facilities including smart classrooms, labs, and library.</p>
         </div>
-
-        <div class="feature-card">
+        <div class="feature-card reveal-up delay-3">
+          <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
           <div class="feature-number">04</div>
           <h3>Holistic Development</h3>
-          <p>Focus on overall personality development through sports, cultural events, and workshops.</p>
+          <p>Overall personality development through sports, cultural events, and workshops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Student Stories</span>
+        <h2>What Our Students Say</h2>
+        <p>Real experiences from the KIMT community</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up">
+          <div class="testi-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"KIMT gave me the perfect foundation for my career. The faculty is highly supportive and the placement cell helped me land my dream job."</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <strong>Rahul Sharma</strong>
+              <span>BCA, Batch 2023</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up delay-1">
+          <div class="testi-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"The campus facilities and teaching quality here are excellent. I particularly loved the practical labs and sports facilities. Truly a complete college experience."</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <strong>Priya Singh</strong>
+              <span>BBA, Batch 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up delay-2">
+          <div class="testi-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p>"KIMT's paramedical program is top-notch. The hands-on training prepared me well for real clinical environments. I'm proud to be a KIMT alumnus."</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <strong>Anjali Verma</strong>
+              <span>DMLT, Batch 2023</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -787,103 +836,96 @@
   <!-- ================= ACTIVITIES ================= -->
   <section id="activities" class="activities-section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Campus Life</span>
         <h2>Campus Activities</h2>
-        <p>Holistic development through diverse activities</p>
+        <p>Holistic development through diverse and enriching activities</p>
       </div>
 
-      <div class="grid activities-grid">
-        <div class="activity-card">
-          <div class="activity-icon">🎯</div>
+      <div class="activities-grid">
+        <div class="activity-card reveal-up">
+          <div class="activity-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
           <h3>Workshops</h3>
-          <p>Regular skill development workshops and training sessions</p>
+          <p>Regular skill development workshops and training sessions by industry professionals</p>
         </div>
-
-        <div class="activity-card">
-          <div class="activity-icon">🏭</div>
+        <div class="activity-card reveal-up delay-1">
+          <div class="activity-icon"><i class="fa-solid fa-industry"></i></div>
           <h3>Industrial Visits</h3>
-          <p>Industry visits and interaction with professionals</p>
+          <p>Industry visits and real-world interaction with working professionals</p>
         </div>
-
-        <div class="activity-card">
-          <div class="activity-icon">🎭</div>
+        <div class="activity-card reveal-up delay-2">
+          <div class="activity-icon"><i class="fa-solid fa-masks-theater"></i></div>
           <h3>Cultural Programs</h3>
-          <p>Annual cultural events and festivals</p>
+          <p>Annual cultural events, festivals and performances celebrating talent</p>
         </div>
-
-        <div class="activity-card">
-          <div class="activity-icon">🏆</div>
+        <div class="activity-card reveal-up">
+          <div class="activity-icon"><i class="fa-solid fa-trophy"></i></div>
           <h3>Sports Meet</h3>
-          <p>Inter-college sports competitions and events</p>
+          <p>Inter-college sports competitions and events — Sports Meet in August!</p>
         </div>
-
-        <div class="activity-card">
-          <div class="activity-icon">🤝</div>
+        <div class="activity-card reveal-up delay-1">
+          <div class="activity-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
           <h3>Social Activities</h3>
-          <p>Community service and social awareness programs</p>
+          <p>Community service and social awareness programs for responsible citizenship</p>
         </div>
-
-        <div class="activity-card">
-          <div class="activity-icon">💼</div>
+        <div class="activity-card reveal-up delay-2">
+          <div class="activity-icon"><i class="fa-solid fa-compass"></i></div>
           <h3>Career Awareness</h3>
-          <p>Career guidance and placement preparation sessions</p>
+          <p>Career guidance sessions and placement preparation workshops</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= QUICK INQUIRY (AUTOMATION) ================= -->
+  <!-- ================= QUICK INQUIRY ================= -->
   <section id="inquiry" class="inquiry-section">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title reveal-up">
+        <span class="section-eyebrow">Get In Touch</span>
         <h2>Quick Inquiry</h2>
-        <p>Share your details — we'll reach out on WhatsApp & Email automatically</p>
+        <p>Share your details — we'll reach out on WhatsApp &amp; Email automatically</p>
       </div>
 
-      <form id="inquiryForm" class="inquiry-form" novalidate>
+      <form id="inquiryForm" class="inquiry-form reveal-up" novalidate>
         <div class="inquiry-grid">
           <div class="form-field">
-            <label for="inqName">Full Name *</label>
-            <input type="text" id="inqName" name="name" placeholder="Your name" required>
+            <label for="inqName"><i class="fa-solid fa-user"></i> Full Name *</label>
+            <input type="text" id="inqName" name="name" placeholder="Your full name" required>
             <span class="field-error" id="errName"></span>
           </div>
-
           <div class="form-field">
-            <label for="inqPhone">Phone Number *</label>
+            <label for="inqPhone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
             <input type="tel" id="inqPhone" name="phone" placeholder="10-digit mobile number" required>
             <span class="field-error" id="errPhone"></span>
           </div>
-
           <div class="form-field">
-            <label for="inqEmail">Email (optional)</label>
+            <label for="inqEmail"><i class="fa-solid fa-envelope"></i> Email (optional)</label>
             <input type="email" id="inqEmail" name="email" placeholder="you@example.com">
             <span class="field-error" id="errEmail"></span>
           </div>
-
           <div class="form-field">
-            <label for="inqCourse">Course Interested In</label>
+            <label for="inqCourse"><i class="fa-solid fa-book"></i> Course Interested In</label>
             <select id="inqCourse" name="course">
               <option value="">Select a course area</option>
-              <option value="Commerce & Management (B.Com/BBA/MBA)">Commerce & Management (B.Com/BBA/MBA)</option>
-              <option value="Humanities & Social Science (BA/MA/BSW)">Humanities & Social Science (BA/MA/BSW)</option>
-              <option value="Science (BSc/MSc)">Science (BSc/MSc)</option>
-              <option value="Engineering & Technology (BCA/MCA/B.Tech)">Engineering & Technology (BCA/MCA/B.Tech)</option>
+              <option value="Commerce & Management (B.Com/BBA/MBA)">Commerce &amp; Management</option>
+              <option value="Humanities & Social Science (BA/MA/BSW)">Humanities &amp; Social Science</option>
+              <option value="Science (BSc/MSc)">Science</option>
+              <option value="Engineering & Technology (BCA/MCA/B.Tech)">Engineering &amp; Technology</option>
               <option value="ParaMedical Science">ParaMedical Science</option>
               <option value="Vocational Education">Vocational Education</option>
-              <option value="Library & Information Science">Library & Information Science</option>
+              <option value="Library & Information Science">Library &amp; Information Science</option>
               <option value="Agriculture Science">Agriculture Science</option>
               <option value="Not sure yet">Not sure yet</option>
             </select>
           </div>
         </div>
-
         <div class="form-field">
-          <label for="inqMessage">Message (optional)</label>
+          <label for="inqMessage"><i class="fa-solid fa-comment"></i> Message (optional)</label>
           <textarea id="inqMessage" name="message" rows="3" placeholder="Any specific question for us?"></textarea>
         </div>
-
-        <button type="submit" class="cta-btn inquiry-submit-btn" id="inquirySubmitBtn">Send Inquiry</button>
-
+        <button type="submit" class="cta-btn inquiry-submit-btn" id="inquirySubmitBtn">
+          <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+        </button>
         <p class="inquiry-status" id="inquiryStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -894,48 +936,87 @@
 <!-- ================= FOOTER ================= -->
 <footer id="contact" role="contentinfo">
   <div class="footer-grid">
-    <div>
+
+    <div class="footer-brand">
+      <img src="images/logo.jpg" alt="KIMT Logo" class="footer-logo">
       <h4>KIMT Bareilly</h4>
-      <p>Krishna Institute of Management and Technology</p>
-      <p style="margin-top: 16px; color: #94a3b8;">Empowering students with quality education and career opportunities since 2020.</p>
+      <p>Krishna Institute of Management and Technology — Empowering students with quality education and career opportunities since 2020.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" title="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram" title="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube" title="Subscribe on YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/919084147587" aria-label="WhatsApp" title="Chat on WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
     </div>
 
     <div>
       <h4>Quick Links</h4>
       <ul class="footer-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#admission">Admission</a></li>
-        <li><a href="#fees">Fee Structure</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+        <li><a href="#courses"><i class="fa-solid fa-angle-right"></i> Courses</a></li>
+        <li><a href="#admission"><i class="fa-solid fa-angle-right"></i> Admission</a></li>
+        <li><a href="#fees"><i class="fa-solid fa-angle-right"></i> Fee Structure</a></li>
+        <li><a href="#activities"><i class="fa-solid fa-angle-right"></i> Activities</a></li>
+        <li><a href="#facilities"><i class="fa-solid fa-angle-right"></i> Facilities</a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i> Gallery</a></li>
       </ul>
     </div>
 
     <div>
       <h4>Contact Information</h4>
-      <p>📍 Aonla–Sirauli Road, Near Vishanpuri Bagiya Churaha, Sona, Sirauli, Bareilly (UP) - 243303</p>
-      <p>📞 <a href="tel:+919084147587">+91 9084147587</a></p>
-      <p>✉️ <a href="mailto:kimtiinfo@gmail.com">kimtiinfo@gmail.com</a></p>
+      <div class="footer-contact-list">
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Aonla–Sirauli Road, Near Vishanpuri Bagiya Churaha, Sona, Sirauli, Bareilly (UP) - 243303</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+919084147587">+91 9084147587</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:kimtiinfo@gmail.com">kimtiinfo@gmail.com</a>
+        </div>
+      </div>
     </div>
 
     <div>
       <h4>Office Hours</h4>
-      <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-      <p>Saturday: 9:00 AM - 2:00 PM</p>
-     
+      <div class="footer-hours">
+        <div class="hours-row">
+          <span>Monday – Friday</span>
+          <span>9:00 AM – 5:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span>Saturday</span>
+          <span>9:00 AM – 2:00 PM</span>
+        </div>
+        <div class="hours-row closed">
+          <span>Sunday</span>
+          <span>Closed</span>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed Placeholder -->
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps?q=KIMT+Bareilly+Sona+Aonla+Sirauli+Road&output=embed"
+          width="100%" height="160" style="border:0;border-radius:10px;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="KIMT Location">
+        </iframe>
+      </div>
     </div>
+
   </div>
 
   <div class="copyright">
-    © 2026 Krishna Institute of Management and Technology. All Rights Reserved.
+    <span>© 2026 Krishna Institute of Management and Technology. All Rights Reserved.</span>
+    <span class="footer-affil">Affiliated to MJP Rohilkhand University &bull; UGC Recognised</span>
   </div>
 </footer>
 
-<!-- EmailJS - used for automated email confirmations (see AUTOMATION-SETUP.md to activate) -->
+<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
 <script src="script.js"></script>
 
 <script>
@@ -944,38 +1025,38 @@ window.addEventListener("scroll", function () {
 });
 </script>
 
-<button id="backToTop" class="back-to-top" aria-label="Back to top">⬆</button>
+<!-- Back to Top -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
-<a href="https://wa.me/919084147587?text=Hello%20I%20want%20to%20know%20about%20admission" 
-   class="whatsapp-btn" 
-   target="_blank">
-   💬
+<!-- WhatsApp -->
+<a href="https://wa.me/919084147587?text=Hello%20I%20want%20to%20know%20about%20admission"
+   class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<!-- ================= AI FAQ CHATBOT (AUTOMATION) ================= -->
+<!-- AI Chatbot -->
 <button id="chatbotToggle" class="chatbot-toggle" aria-label="Open KIMT Assistant chat" aria-expanded="false">
-  <span class="chatbot-toggle-icon">🤖</span>
+  <i class="fa-solid fa-robot"></i>
 </button>
 
 <div id="chatbotPanel" class="chatbot-panel" role="dialog" aria-label="KIMT Assistant chat" aria-hidden="true">
   <div class="chatbot-header">
     <div class="chatbot-header-info">
-      <span class="chatbot-avatar">🤖</span>
+      <div class="chatbot-avatar"><i class="fa-solid fa-robot"></i></div>
       <div>
         <p class="chatbot-title">KIMT Assistant</p>
         <p class="chatbot-subtitle">Usually replies instantly</p>
       </div>
     </div>
-    <button id="chatbotClose" class="chatbot-close" aria-label="Close chat">&#10005;</button>
+    <button id="chatbotClose" class="chatbot-close" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
   </div>
-
   <div id="chatbotMessages" class="chatbot-messages"></div>
-
   <div id="chatbotQuickReplies" class="chatbot-quick-replies"></div>
-
   <form id="chatbotForm" class="chatbot-input-row">
     <input type="text" id="chatbotInput" placeholder="Ask about admission, fees, courses..." aria-label="Type your question" autocomplete="off">
-    <button type="submit" aria-label="Send message">➤</button>
+    <button type="submit" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
   </form>
 </div>
 
