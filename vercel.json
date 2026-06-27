@@ -3,6 +3,14 @@
     {
       "source": "/api/:path*",
       "destination": "https://kimt-portal.onrender.com/api/:path*"
+    },
+    {
+      "source": "/student/:path*",
+      "destination": "https://kimt-portal.onrender.com/student/:path*"
+    },
+    {
+      "source": "/admin-panel/:path*",
+      "destination": "https://kimt-portal.onrender.com/admin-panel/:path*"
     }
   ]
 }
