@@ -1,20 +1,28 @@
 {
   "rewrites": [
     {
-      "source": "/student/:path*",
-      "destination": "https://kimt-portal.onrender.com/student/:path*"
+      "source": "/student/",
+      "destination": "https://kimt-portal.onrender.com/student"
     },
     {
       "source": "/student",
       "destination": "https://kimt-portal.onrender.com/student"
     },
     {
-      "source": "/admin-panel/:path*",
-      "destination": "https://kimt-portal.onrender.com/admin/:path*"
+      "source": "/student/:path*",
+      "destination": "https://kimt-portal.onrender.com/student/:path*"
+    },
+    {
+      "source": "/admin-panel/",
+      "destination": "https://kimt-portal.onrender.com/admin"
     },
     {
       "source": "/admin-panel",
       "destination": "https://kimt-portal.onrender.com/admin"
+    },
+    {
+      "source": "/admin-panel/:path*",
+      "destination": "https://kimt-portal.onrender.com/admin/:path*"
     },
     {
       "source": "/api/:path*",
