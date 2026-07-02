@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/uploads/:path*",
+      "destination": "https://kimt-portal.onrender.com/uploads/:path*"
+    },
+    {
       "source": "/student/:path*",
       "destination": "https://kimt-portal.onrender.com/student/:path*"
     },
