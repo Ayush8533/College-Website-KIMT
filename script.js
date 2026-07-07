@@ -467,3 +467,96 @@ if (inquiryForm) {
 }
 
 console.log('✅ KIMT Script Loaded Successfully');
+
+
+// ================= SANITY CMS COURSES =================
+
+const SANITY_PROJECT_ID = "x2752f7h";
+const SANITY_DATASET = "production";
+
+const SANITY_QUERY = encodeURIComponent(`
+  *[_type == "course" && isActive == true] | order(_createdAt asc) {
+    _id,
+    title,
+    duration,
+    description,
+    fees,
+    "imageUrl": image.asset->url
+  }
+`);
+
+const SANITY_URL =
+  `https://${SANITY_PROJECT_ID}.api.sanity.io/v2025-02-19/data/query/${SANITY_DATASET}?query=${SANITY_QUERY}`;
+
+async function loadCoursesFromSanity() {
+  const coursesGrid = document.getElementById("coursesGrid");
+
+  if (!coursesGrid) return;
+
+  try {
+    const response = await fetch(SANITY_URL);
+
+    if (!response.ok) {
+      throw new Error(`Sanity request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const courses = data.result;
+
+    if (!courses || courses.length === 0) {
+      coursesGrid.innerHTML = "<p>No courses available.</p>";
+      return;
+    }
+
+    coursesGrid.innerHTML = courses.map((course, index) => {
+
+      let delayClass = "";
+
+      if (index % 3 === 1) delayClass = "delay-1";
+      if (index % 3 === 2) delayClass = "delay-2";
+
+      return `
+        <div class="course-card reveal-up ${delayClass}">
+
+          ${
+            course.imageUrl
+              ? `<img
+                   src="${course.imageUrl}"
+                   alt="${course.title || "Course"}"
+                   class="course-cms-image"
+                   loading="lazy"
+                 >`
+              : `<div class="course-icon">
+                   <i class="fa-solid fa-graduation-cap"></i>
+                 </div>`
+          }
+
+          <h5>${course.title || ""}</h5>
+
+          <p>${course.description || ""}</p>
+
+          ${
+            course.duration
+              ? `<div class="course-tag">${course.duration}</div>`
+              : ""
+          }
+
+          ${
+            course.fees
+              ? `<p class="course-fees">Fees: ${course.fees}</p>`
+              : ""
+          }
+
+        </div>
+      `;
+    }).join("");
+
+  } catch (error) {
+    console.error("Error loading Sanity courses:", error);
+
+    coursesGrid.innerHTML =
+      "<p>Courses could not be loaded right now.</p>";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadCoursesFromSanity);
